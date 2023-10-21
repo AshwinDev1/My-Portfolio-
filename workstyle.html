@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Workstyle</title>
+    <style>
+        /* Reset default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 20px;
+            color: white;
+        }
+
+        #menubar {
+            background-color: #ddd;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        #menubar a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: background-color 0.3s, color 0.3s;
+            color: black;
+            display: inline-block;
+        }
+
+        #menubar a:hover {
+            background-color: #e74c3c;
+            color: black;
+        }
+
+        #data {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #data h5 {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            color: red;
+        }
+
+        p {
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Parallax scrolling background */
+        body::before {
+            content: "";
+            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Workstyle</h1>
+
+    <div id="menubar">
+        <a href="index.html">Home</a>
+        <a href="Skills.html">My Skills</a>
+        <a href="myinterests.html" class="text-red">My Interests</a>
+        <a href="workstyle.html">My Workstyle</a>
+    </div>
+
+    <div id="data">
+        <h5>My Workstyle:</h5>
+        <b><p>My workstyle is straightforward: I invest all my effort into what I do, and in return, I consistently achieve excellent results. I maintain unwavering focus during work.</p></b>
+    </div>
+</body>
+</html>
